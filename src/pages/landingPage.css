@@ -1,0 +1,20 @@
+.hero-text {
+    border: 2px solid red;
+    overflow: hidden;
+    background-image: url("../assets//landingBeach.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 10s infinite;
+}
+
+.hero-text p {
+    font-family: cursive;
+}
+
+@keyframes change {
+
+    20% {
+        background-image: url("../assets/Cloudleft.png");
+    }
+}

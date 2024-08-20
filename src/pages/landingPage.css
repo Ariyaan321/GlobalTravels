@@ -1,56 +1,156 @@
-.images {
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&display=swap');
+
+.newimage {
+    position: absolute;
+    background-blend-mode: darken;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+
+.images-pos {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0;
-    animation: opa 3s infinite ease-in-out alternate;
+}
+
+.earth {
+    position: relative;
+    display: inline-block;
+    z-index: 10;
+    width: fit-content;
+    height: fit-content;
+    /* left: 50.6%; */
+    top: 36%;
+    font-size: 60px;
+    animation: rotateGlobe 5s linear infinite;
+    /* border: 3px solid red; */
+
 }
 
 .hero-text {
-    border: 3px solid yellow;
-    z-index: 1;
+    /* background-color: rgb(217, 250, 245);
+    background: rgba(0, 0, 0, 0.5); */
+    /* border: 3px solid yellow; */
+    z-index: 10;
     position: relative;
-    color: red;
+    color: white;
     top: 35%;
     left: 10%;
-    font-size: larger;
-    width: 50%;
+    font-size: 35px;
+    width: fit-content;
     height: 30%;
 }
 
 .hero-text h1 {
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: larger;
+    font-style: normal;
     display: block;
     flex-direction: column-reverse;
     width: fit-content;
-    border: 2px solid green;
+    /* border: 2px solid green; */
     height: fit-content;
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .hero-text p {
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
     height: fit-content;
     max-width: 600px;
-    font-size: small;
-    z-index: 999;
+    font-size: large;
+    z-index: 10;
     line-height: 1.5;
     font-family: cursive;
     margin-top: 10px;
 }
 
+.button {
+    margin-top: 15px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 30px;
+    background-image: linear-gradient(-180deg, #FF6347, #FF4500);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+    color: white;
+    font-weight: bolder;
+    font-size: medium;
+    cursor: pointer;
+    border: 0;
+    transition: box-shadow .2s;
+}
 
-@keyframes opa {
+.button:hover {
+    box-shadow: rgba(253, 76, 0, 0.5) 0 3px 8px;
+}
 
+.countries {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    left: 85%;
+    top: 58%;
+    z-index: 15;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-weight: bolder;
+    transition: all 2s infinite alternate;
+}
+
+@keyframes rotateGlobe {
     0% {
-        opacity: 0;
+        transform: rotate(0deg);
     }
 
-    50% {
-        opacity: 1;
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opa {
+    0% {
+        opacity: 0;
     }
 
     100% {
         opacity: 1;
     }
 }
+
+
+
+
+/* 475 - xs
+640 - sm 
+768 - md 
+1024 - lg 
+1280 - xl 
+1536 - 2xl */
+
+
+
+/* Default: Extra-small devices such as small phones (less than 640px) */
+
+/* Small devices such as large phones (640px and up) */
+/* @media only screen and (min-width: 640px) {...} */
+
+/* Medium devices such as tablets (768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices such as laptops (1024px and up) */
+/* @media only screen and (min-width: 1024px) {...} */
+
+/* Largest devices such as desktops (1280px and up) */
+/* @media only screen and (min-width: 1280px) {...} */

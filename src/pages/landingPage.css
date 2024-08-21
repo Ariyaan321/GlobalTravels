@@ -5,7 +5,6 @@
     background-blend-mode: darken;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    height: 100%;
     z-index: 2;
 }
 
@@ -15,21 +14,27 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    /* height: 60%;
+    height: 100%; */
+    /* height: auto; */
     z-index: 0;
+}
+
+.images-pos img {
+    object-fit: cover;
 }
 
 .earth {
     position: relative;
+    top: 15px;
+    left: 2px;
     display: inline-block;
     z-index: 10;
     width: fit-content;
     height: fit-content;
-    /* left: 50.6%; */
-    top: 36%;
     font-size: 60px;
     animation: rotateGlobe 5s linear infinite;
-    /* border: 3px solid red; */
+    /* border: 1px solid red; */
 
 }
 
@@ -37,26 +42,27 @@
     /* background-color: rgb(217, 250, 245);
     background: rgba(0, 0, 0, 0.5); */
     /* border: 3px solid yellow; */
-    z-index: 10;
+    z-index: 100;
     position: relative;
     color: white;
     top: 35%;
     left: 10%;
     font-size: 35px;
-    width: fit-content;
-    height: 30%;
+    width: 70%;
+    height: 39%;
+
 }
 
 .hero-text h1 {
     font-family: "Edu VIC WA NT Beginner", cursive;
-    font-optical-sizing: auto;
     font-weight: larger;
     font-style: normal;
     display: block;
     flex-direction: column-reverse;
-    width: fit-content;
+    width: max-content;
     /* border: 2px solid green; */
-    height: fit-content;
+    height: 43%;
+    padding-bottom: 12px;
     text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -68,11 +74,11 @@
     z-index: 10;
     line-height: 1.5;
     font-family: cursive;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .button {
-    margin-top: 15px;
+    margin-top: 10px;
     position: absolute;
     width: fit-content;
     height: fit-content;
@@ -93,14 +99,14 @@
 }
 
 .countries {
-    position: relative;
+    position: absolute;
     width: fit-content;
     height: fit-content;
     font-size: 25px;
     padding: 10px;
     border-radius: 10px;
-    left: 85%;
-    top: 58%;
+    left: 83%;
+    top: 88%;
     z-index: 15;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -130,6 +136,50 @@
 }
 
 
+@media screen and (min-width: 375px) and (max-width: 424px) {
+
+    .images-pos {
+        /* aspect-ratio: 1 / 2; */
+        aspect-ratio: 375 / 724;
+    }
+
+    .earth {
+        font-size: large;
+        top: 6px;
+        border: transparent;
+        outline: transparent;
+        background-color: transparent;
+        box-sizing: border-box;
+        box-shadow: transparent;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        font-size: 10px;
+    }
+
+    .hero-text h1 {
+        height: fit-content;
+    }
+
+    .hero-text p {
+        margin-top: -5px;
+        font-size: 8px;
+        width: 250px;
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 7px;
+        padding: 5px 5px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
 
 
 /* 475 - xs

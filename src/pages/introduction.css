@@ -7,12 +7,14 @@ img {
     width: 50%;
 }
 
-.newimg {
+.newimgintro {
     width: 100%;
     height: max-content;
 }
 
 .intro-plane {
+    /* border: 2px solid red; */
+    overflow: visible;
     display: flex;
     justify-content: center;
     align-items: center;

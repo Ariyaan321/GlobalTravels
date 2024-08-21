@@ -48,7 +48,7 @@ const Introduction = () => {
                     transition={{ duration: 7, delay: 4 }}
                     src={plane}
                     alt="planefly"
-                    className='newimg'
+                    className='newimgintro'
                 />
             </div>
 

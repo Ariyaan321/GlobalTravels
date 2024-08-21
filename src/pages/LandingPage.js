@@ -51,7 +51,6 @@ const LandingPage = () => {
         <>
             <Navbar />
 
-            {/* <div className='earth'>🌏</div> */}
             <div className='newimage'></div>
             <motion.div
                 className='images-pos'

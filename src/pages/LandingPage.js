@@ -27,7 +27,7 @@ const LandingPage = () => {
             city: "Paris"
         },
         {
-            cname: "Switzerland", // italy
+            cname: "Italy", // italy
             city: "Stelvio"
         },
     ]

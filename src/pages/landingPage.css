@@ -146,26 +146,28 @@
     .earth {
         font-size: large;
         top: 6px;
-        border: transparent;
-        outline: transparent;
-        background-color: transparent;
-        box-sizing: border-box;
-        box-shadow: transparent;
+        border-radius: 60%;
     }
 
     .hero-text {
         left: 4.5%;
-        font-size: 10px;
+        height: 150px;
+        width: 95%;
+        font-size: 13.5px;
+        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
+        width: fit-content;
         height: fit-content;
+        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: -5px;
-        font-size: 8px;
-        width: 250px;
+        font-size: 10px;
+        width: 290px;
+        /* border: 2px solid blue; */
     }
 
     .button {

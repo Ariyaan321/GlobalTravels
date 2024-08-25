@@ -14,9 +14,7 @@ const Introduction = () => {
             opacity: 1,
             transition: {
                 staggerChildren: 0.2,
-                // staggerChildren: 0, // for query test
                 duration: 2,
-                // duration: 4, // for query test 
             },
         },
     };
@@ -33,7 +31,6 @@ const Introduction = () => {
                 initial={{ translateX: -900 }}
                 animate={{ translateX: 0 }}
                 transition={{ duration: 5, delay: 0.5 }}
-                // transition={{ duration: 3, delay: 2, ease: easeInOut }} // for query test
                 src={cloudLeft}
                 alt="cloudLeft" />
 
@@ -41,17 +38,14 @@ const Introduction = () => {
                 initial={{ translateX: 900 }}
                 animate={{ translateX: 0 }}
                 transition={{ duration: 5, delay: 0.5 }}
-                // transition={{ duration: 3, delay: 2, ease: easeInOut }} // for query test
                 src={cloudRight}
                 alt="cloudRight" />
 
             <div className='intro-plane'>
                 <motion.img
                     initial={{ translateX: -800, translateY: -685, scale: 9 }}
-                    // initial={{ translateX: 0, translateY: 0 }}
                     animate={{ translateX: 0, translateY: 0, scale: 0 }}
                     transition={{ duration: 7, delay: 4 }}
-                    // transition={{ duration: 5, delay: 4 }} // for query test
                     src={plane}
                     alt="planefly"
                     className='newimgintro'

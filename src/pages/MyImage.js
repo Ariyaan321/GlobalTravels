@@ -8,7 +8,7 @@ const MyImage = ({ image, className }) => (
         src={image}
         className={className}
         width={'200vw'}
-        effect="blur" // Optional: Adds a blur effect as the image loads
+        effect="blur"
     />
 );
 

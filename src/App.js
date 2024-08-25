@@ -10,15 +10,14 @@ function App() {
   useState(() => {
     setTimeout(() => {
       setShowPage(true)
-    }, 14000)
+    }, 16000)
   })
-
 
   return (
     <div className="App">
       <motion.div
         animate={{ y: -620 }}
-        transition={{ duration: 5, delay: 9 }}
+        transition={{ duration: 5, delay: 11 }}
         style={showPage ? { display: 'none' } : {}}
       >
         <Introduction />
@@ -29,8 +28,6 @@ function App() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            // transition={{ duration: 5, delay: 15 }}
-            // style={showPage ? {} : { display: 'none' }}
             transition={{ duration: 5 }}
           >
             <LandingPage />

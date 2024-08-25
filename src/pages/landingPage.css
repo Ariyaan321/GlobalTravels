@@ -8,15 +8,11 @@
     z-index: 2;
 }
 
-
 .images-pos {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* height: 60%;
-    height: 100%; */
-    /* height: auto; */
     z-index: 0;
 }
 
@@ -34,13 +30,9 @@
     height: fit-content;
     font-size: 60px;
     animation: rotateGlobe 5s linear infinite;
-    /* border: 1px solid red; */
-
 }
 
 .hero-text {
-    /* background: rgba(0, 0, 0, 0.5); */
-    /* border: 3px solid yellow; */
     z-index: 100;
     position: relative;
     color: white;
@@ -49,7 +41,6 @@
     font-size: 35px;
     width: 70%;
     height: 39%;
-
 }
 
 .hero-text h1 {
@@ -60,7 +51,6 @@
     display: block;
     flex-direction: column-reverse;
     width: max-content;
-    /* border: 2px solid green; */
     height: 43%;
     padding-bottom: 12px;
     text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.5);
@@ -68,7 +58,6 @@
 
 .hero-text p {
     background-color: rgba(0, 0, 0, 0.5);
-    /* border: 2px solid purple; */
     height: fit-content;
     width: 600px;
     font-size: large;
@@ -141,7 +130,6 @@
     }
 }
 
-
 /* MEDIUM */
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -158,20 +146,17 @@
         height: 150px;
         width: 95%;
         font-size: 13.5px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         width: fit-content;
         height: fit-content;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0px;
         font-size: 10px;
         width: 290px;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -203,20 +188,17 @@
         height: 150px;
         width: 95%;
         font-size: 11.3px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         width: fit-content;
         height: fit-content;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0px;
         font-size: 8px;
         width: 293.5px;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -231,7 +213,6 @@
         top: 90%;
     }
 }
-
 
 /* LARGE */
 
@@ -249,20 +230,17 @@
         height: 150px;
         width: 95%;
         font-size: 15.5px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         width: fit-content;
         height: fit-content;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0px;
         font-size: 12px;
         width: 390px;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -277,8 +255,6 @@
         top: 90%;
     }
 }
-
-
 
 /* Tablet */
 
@@ -296,20 +272,17 @@
         height: 173px;
         width: 95%;
         font-size: 24px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         width: fit-content;
         height: fit-content;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0px;
         font-size: 15px;
         width: 80%;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -324,7 +297,6 @@
         top: 90%;
     }
 }
-
 
 /* Laptop */
 
@@ -342,21 +314,18 @@
         height: 173px;
         width: 95%;
         font-size: 24px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         letter-spacing: 3px;
         width: fit-content;
         height: fit-content;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0px;
         font-size: 15px;
         width: 60%;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -372,9 +341,7 @@
     }
 }
 
-
 /* Laptop L -> NONE*/
-
 
 /* 4K */
 
@@ -392,21 +359,18 @@
         height: 500px;
         width: 95%;
         font-size: 64px;
-        /* border: 2px solid red; */
     }
 
     .hero-text h1 {
         letter-spacing: 3px;
         width: fit-content;
         height: 38%;
-        /* border: 2px solid green; */
     }
 
     .hero-text p {
         margin-top: 0;
         font-size: 35px;
         width: 65%;
-        /* border: 2px solid blue; */
     }
 
     .button {
@@ -421,28 +385,3 @@
         top: 90%;
     }
 }
-
-
-
-/* 475 - xs
-640 - sm 
-768 - md 
-1024 - lg 
-1280 - xl 
-1536 - 2xl */
-
-
-
-/* Default: Extra-small devices such as small phones (less than 640px) */
-
-/* Small devices such as large phones (640px and up) */
-/* @media only screen and (min-width: 640px) {...} */
-
-/* Medium devices such as tablets (768px and up) */
-/* @media only screen and (min-width: 768px) {...} */
-
-/* Large devices such as laptops (1024px and up) */
-/* @media only screen and (min-width: 1024px) {...} */
-
-/* Largest devices such as desktops (1280px and up) */
-/* @media only screen and (min-width: 1280px) {...} */

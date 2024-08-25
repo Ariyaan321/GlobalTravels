@@ -9,7 +9,6 @@ const navbar = () => {
                 <img src={Logo} alt="imgs" />
                 <input type="checkbox" id="check" />
                 <label for="check" className='checkbtn'>
-                    {/* <i>☰</i>*/}
                     <i>✈️</i>
                 </label>
                 <ul>

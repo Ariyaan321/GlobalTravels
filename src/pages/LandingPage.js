@@ -27,31 +27,28 @@ const LandingPage = () => {
             city: "Paris"
         },
         {
-            cname: "Italy", // italy
+            cname: "Italy",
             city: "Stelvio"
         },
     ]
-    // 4928 x 3280
-    // 1456 x 816
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setOpacityIsActive(false); // Start fading out
+            setOpacityIsActive(false);
             setTimeout(() => {
                 setChangeBgCounter((prevCounter) => (prevCounter + 1) % bgGallery.length);
                 setChangeCountryCounter((prevCounter) => (prevCounter + 1) % countryLocations.length);
-                setOpacityIsActive(true); // Fade in the next image
-            }, 2000); // Wait for the fade-out to complete before changing the image
-        }, 15000); // 5s visible, 2s fade
+                setOpacityIsActive(true);
+            }, 2000);
+        }, 15000);
 
-        return () => clearInterval(interval); // Clear the interval when the component unmounts
+        return () => clearInterval(interval);
     });
 
     return (
         <>
             <Navbar />
 
-            {/* <div className='newimage'></div> */}
             <motion.div
                 className='images-pos'
                 animate={{ opacity: opacityIsActive ? 1 : 0 }}

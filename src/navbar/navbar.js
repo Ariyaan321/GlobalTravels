@@ -1,12 +1,12 @@
 import React from 'react'
 import "./navbar.css"
-import LandingBeach from "../assets/landingBeach.jpg"
+import Logo from "../assets/logo3tf.png"
 
 const navbar = () => {
     return (
         <>
             <div className='container'>
-                <img src={LandingBeach} alt="imgs" />
+                <img src={Logo} alt="imgs" />
                 <input type="checkbox" id="check" />
                 <label for="check" className='checkbtn'>
                     {/* <i>☰</i>*/}

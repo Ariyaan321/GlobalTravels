@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Navbar from '../navbar/navbar'
 import './landingPage.css'
-import swissHouse from "../assets/swiss169.jpg"
+import swissHouse from "../assets/italy169.jpg"
 import japan from "../assets/japanO169.jpg"
 import paris from "../assets/parisC2.jpeg"
 import santorini from "../assets/san169flip.jpg"
@@ -51,7 +51,7 @@ const LandingPage = () => {
         <>
             <Navbar />
 
-            <div className='newimage'></div>
+            {/* <div className='newimage'></div> */}
             <motion.div
                 className='images-pos'
                 animate={{ opacity: opacityIsActive ? 1 : 0 }}
@@ -64,7 +64,7 @@ const LandingPage = () => {
                 <p>
                     Explore breathtaking destinations, create unforgettable memories, and experience the world like never before with GlobalTravels.
                 </p>
-                <button className='button'>Book Now</button>
+                <button className='button'><a href="/">Book Now</a></button>
             </div>
             <div className='countries'>
                 {countryLocations[changeCountryCounter].city + ', ' + countryLocations[changeCountryCounter].cname}

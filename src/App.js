@@ -1,12 +1,42 @@
-import './App.css'
+import React, { useState } from 'react';
+import './App.css';
 import Introduction from './pages/introduction';
 import LandingPage from './pages/LandingPage';
+import { motion } from 'framer-motion';
 
 function App() {
+  const [showPage, setShowPage] = useState(false);
+
+  useState(() => {
+    setTimeout(() => {
+      setShowPage(true)
+    }, 14000)
+  })
+
+
   return (
     <div className="App">
-      {/* <Introduction /> */}
-      <LandingPage />
+      <motion.div
+        animate={{ y: -620 }}
+        transition={{ duration: 5, delay: 9 }}
+        style={showPage ? { display: 'none' } : {}}
+      >
+        <Introduction />
+      </motion.div>
+
+      {
+        showPage ?
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            // transition={{ duration: 5, delay: 15 }}
+            // style={showPage ? {} : { display: 'none' }}
+            transition={{ duration: 5 }}
+          >
+            <LandingPage />
+          </motion.div>
+          : <></>
+      }
     </div>
   );
 }

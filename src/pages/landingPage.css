@@ -39,8 +39,7 @@
 }
 
 .hero-text {
-    /* background-color: rgb(217, 250, 245);
-    background: rgba(0, 0, 0, 0.5); */
+    /* background: rgba(0, 0, 0, 0.5); */
     /* border: 3px solid yellow; */
     z-index: 100;
     position: relative;
@@ -54,6 +53,7 @@
 }
 
 .hero-text h1 {
+    background-color: rgba(0, 0, 0, 0.5);
     font-family: "Edu VIC WA NT Beginner", cursive;
     font-weight: larger;
     font-style: normal;
@@ -67,9 +67,10 @@
 }
 
 .hero-text p {
+    background-color: rgba(0, 0, 0, 0.5);
     /* border: 2px solid purple; */
     height: fit-content;
-    max-width: 600px;
+    width: 600px;
     font-size: large;
     z-index: 10;
     line-height: 1.5;
@@ -92,6 +93,11 @@
     cursor: pointer;
     border: 0;
     transition: box-shadow .2s;
+}
+
+.button a {
+    text-decoration: none;
+    color: white;
 }
 
 .button:hover {
@@ -136,16 +142,14 @@
 }
 
 
-@media screen and (min-width: 375px) and (max-width: 424px) {
+/* MEDIUM */
 
-    .images-pos {
-        /* aspect-ratio: 1 / 2; */
-        aspect-ratio: 375 / 724;
-    }
+@media screen and (min-width: 375px) and (max-width: 424px) {
 
     .earth {
         font-size: large;
-        top: 6px;
+        top: 4px;
+        left: 0;
         border-radius: 60%;
     }
 
@@ -164,9 +168,54 @@
     }
 
     .hero-text p {
-        margin-top: -5px;
+        margin-top: 0px;
         font-size: 10px;
         width: 290px;
+        /* border: 2px solid blue; */
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 9px;
+        padding: 7px 7px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+/* Small */
+
+@media screen and (min-width: 320px) and (max-width: 374px) {
+
+    .earth {
+        font-size: large;
+        top: 4px;
+        left: 0;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 150px;
+        width: 95%;
+        font-size: 11.3px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+        /* border: 2px solid green; */
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 8px;
+        width: 293.5px;
         /* border: 2px solid blue; */
     }
 
@@ -182,6 +231,197 @@
         top: 90%;
     }
 }
+
+
+/* LARGE */
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+
+    .earth {
+        font-size: 25px;
+        top: 6px;
+        left: 0px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 150px;
+        width: 95%;
+        font-size: 15.5px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+        /* border: 2px solid green; */
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 12px;
+        width: 390px;
+        /* border: 2px solid blue; */
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .countries {
+        font-size: 10px;
+        left: 70%;
+        top: 90%;
+    }
+}
+
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .earth {
+        font-size: 37px;
+        top: 7.5px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 173px;
+        width: 95%;
+        font-size: 24px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-text h1 {
+        width: fit-content;
+        height: fit-content;
+        /* border: 2px solid green; */
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 15px;
+        width: 80%;
+        /* border: 2px solid blue; */
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .countries {
+        font-size: 15px;
+        left: 79%;
+        top: 90%;
+    }
+}
+
+
+/* Laptop */
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .earth {
+        font-size: 37px;
+        top: 7.5px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 173px;
+        width: 95%;
+        font-size: 24px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-text h1 {
+        letter-spacing: 3px;
+        width: fit-content;
+        height: fit-content;
+        /* border: 2px solid green; */
+    }
+
+    .hero-text p {
+        margin-top: 0px;
+        font-size: 15px;
+        width: 60%;
+        /* border: 2px solid blue; */
+    }
+
+    .button {
+        margin-top: 5px;
+        font-size: 12px;
+        padding: 12px 12px;
+    }
+
+    .countries {
+        font-size: 18px;
+        left: 79%;
+        top: 90%;
+    }
+}
+
+
+/* Laptop L -> NONE*/
+
+
+/* 4K */
+
+@media screen and (min-width: 2560px) {
+
+    .earth {
+        font-size: 6.5rem;
+        top: 20px;
+        left: 3px;
+        border-radius: 60%;
+    }
+
+    .hero-text {
+        left: 4.5%;
+        height: 500px;
+        width: 95%;
+        font-size: 64px;
+        /* border: 2px solid red; */
+    }
+
+    .hero-text h1 {
+        letter-spacing: 3px;
+        width: fit-content;
+        height: 38%;
+        /* border: 2px solid green; */
+    }
+
+    .hero-text p {
+        margin-top: 0;
+        font-size: 35px;
+        width: 65%;
+        /* border: 2px solid blue; */
+    }
+
+    .button {
+        margin-top: 7px;
+        font-size: 30px;
+        padding: 20px 20px;
+    }
+
+    .countries {
+        font-size: 48px;
+        left: 79%;
+        top: 90%;
+    }
+}
+
 
 
 /* 475 - xs

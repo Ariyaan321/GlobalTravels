@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+### 📒**Hero Section Component Template Description:-**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- This template is related to the industry of **Travel and Tourism**, **GlobalTravels** can be helpful to any travel agency seeking to grow their business and grapple their audience's attention through a beautiful completely responsive website that tells an adventurous story of their future journeys.
+- The template/website covers all the requirements provided by GrapplTech in the given PDF file to interns, they are as follows: **Content Elements**, **Design Specification** and **Technical Requirements**
 
-## Available Scripts
+### 👨‍💻**Technical Details:-**
 
-In the project directory, you can run:
+- **Technology used**:-  ReactJS
+- **Libraries used**: -
+1) framer-motion: for seamlessly stunning animations to gain users attention 
+2) react-lazy-load-image-component: An easy-to-use performant solution to lazy load images in React, Thus increasing the performance and efficiency of the website
 
-### `npm start`
+- **Color Palette**:-
+1) Primary Color: #FF4500
+2) Introduction Page Text Color: linear-gradient(45deg, #FFD700, #FF4500, #FF6347);
+3) Landing Page Text Color: White
+4) Text's Div Background Color: rgba(0, 0, 0, 0.5);
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Font Family**:- 
+1) Navbar: "Roboto", sans-serif;
+2) Header: "Edu VIC WA NT Beginner", cursive;
+3) Paragraph: cursive;
+4) Logo: Adamina
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 📸**Screenshots:-**
+![introductionPage](https://github.com/user-attachments/assets/bdac2e66-69ed-4394-a5d4-40f670e70e85)
+![landingPage](https://github.com/user-attachments/assets/32f631f2-9e2c-40fd-92c7-793bfc8a4325)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 👀**Live Demo Link:-** https://grappltravel.vercel.app/
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
